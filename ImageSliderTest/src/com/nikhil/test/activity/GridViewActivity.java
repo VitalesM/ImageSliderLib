@@ -1,12 +1,9 @@
-package com.nikhil.imagesliderlib.activity;
+package com.nikhil.test.activity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.widget.GridView;
@@ -14,7 +11,7 @@ import android.widget.GridView;
 import com.nikhil.imagesliderlib.adapter.GridViewImageAdapter;
 import com.nikhil.imagesliderlib.helper.AppConstant;
 import com.nikhil.imagesliderlib.helper.Utils;
-import com.nikhil.imagesliderlib.model.GridImageViewListner;
+import com.nikhil.test.model.GridImageViewListner;
 
 public class GridViewActivity extends Activity {
 
@@ -42,10 +39,24 @@ public class GridViewActivity extends Activity {
 
 		// loading all image paths from SD card
 		
-		//int[] drawable = {R.drawable.};
+		int[] drawable = {R.drawable.ic_01,
+				R.drawable.ic_02,
+				R.drawable.ic_03,
+				R.drawable.ic_04,
+				R.drawable.ic_05,
+				R.drawable.ic_06,
+				R.drawable.ic_07,
+				R.drawable.ic_08,
+				R.drawable.ic_09,
+				R.drawable.ic_10,
+				R.drawable.ic_11,
+				R.drawable.ic_12,
+				R.drawable.ic_13,
+				R.drawable.ic_14,
+				R.drawable.ic_15,};
+		AppConstant.drawablelist = drawable;
 		
-		
-		AppConstant.setBitmap(GridViewActivity.this);
+		AppConstant.setBitmapDrawable(GridViewActivity.this);
 
 		// Gridview adapter
 		adapter = new GridViewImageAdapter(GridViewActivity.this,

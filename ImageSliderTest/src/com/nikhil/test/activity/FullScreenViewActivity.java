@@ -1,4 +1,4 @@
-package com.nikhil.imagesliderlib.activity;
+package com.nikhil.test.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,7 +23,7 @@ public class FullScreenViewActivity extends Activity {
 		Intent i = getIntent();
 		int position = i.getIntExtra("position", 0);
 		
-		AppConstant.setOddBitmap(FullScreenViewActivity.this);
+	//	AppConstant.setOddBitmap(FullScreenViewActivity.this);
 
 		adapter = new FullScreenImageAdapter(FullScreenViewActivity.this,
 				AppConstant.imageBitmapList);

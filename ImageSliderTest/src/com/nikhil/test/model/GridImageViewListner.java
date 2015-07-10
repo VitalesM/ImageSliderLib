@@ -3,14 +3,14 @@
  *
  * Jul 10, 2015
  */
-package com.nikhil.imagesliderlib.model;
+package com.nikhil.test.model;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 
-import com.nikhil.imagesliderlib.activity.FullScreenViewActivity;
 import com.nikhil.imagesliderlib.helper.OnImageClickListener;
+import com.nikhil.test.activity.FullScreenViewActivity;
 
 /**
  * @author Nikhil V
