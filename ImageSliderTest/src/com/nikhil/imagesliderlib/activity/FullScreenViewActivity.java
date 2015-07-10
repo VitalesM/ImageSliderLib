@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
 import com.nikhil.imagesliderlib.adapter.FullScreenImageAdapter;
-import com.nikhil.imagesliderlib.helper.Utils;
+import com.nikhil.imagesliderlib.helper.AppConstant;
 
-public class FullScreenViewActivity extends Activity{
+public class FullScreenViewActivity extends Activity {
 
-	private Utils utils;
 	private FullScreenImageAdapter adapter;
 	private ViewPager viewPager;
 
@@ -18,17 +17,16 @@ public class FullScreenViewActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_fullscreen_view);
-		
-		
-		viewPager = (ViewPager) findViewById(R.id.pager);
 
-		utils = new Utils(getApplicationContext());
+		viewPager = (ViewPager) findViewById(R.id.pager);
 
 		Intent i = getIntent();
 		int position = i.getIntExtra("position", 0);
+		
+		AppConstant.setOddBitmap(FullScreenViewActivity.this);
 
 		adapter = new FullScreenImageAdapter(FullScreenViewActivity.this,
-				utils.getFilePaths());
+				AppConstant.imageBitmapList);
 
 		viewPager.setAdapter(adapter);
 

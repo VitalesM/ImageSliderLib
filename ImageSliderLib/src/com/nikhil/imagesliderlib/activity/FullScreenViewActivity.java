@@ -1,4 +1,4 @@
-package com.nikhil.imagesliderlib.activity;
+/*package com.nikhil.imagesliderlib.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -39,4 +39,4 @@ public class FullScreenViewActivity extends Activity{
 		// displaying selected image first
 		viewPager.setCurrentItem(position);
 	}
-}
+}*/

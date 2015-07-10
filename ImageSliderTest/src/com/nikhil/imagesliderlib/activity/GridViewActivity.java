@@ -14,6 +14,7 @@ import android.widget.GridView;
 import com.nikhil.imagesliderlib.adapter.GridViewImageAdapter;
 import com.nikhil.imagesliderlib.helper.AppConstant;
 import com.nikhil.imagesliderlib.helper.Utils;
+import com.nikhil.imagesliderlib.model.GridImageViewListner;
 
 public class GridViewActivity extends Activity {
 
@@ -22,7 +23,7 @@ public class GridViewActivity extends Activity {
 	private GridViewImageAdapter adapter;
 	private GridView gridView;
 	private int columnWidth;
-	private List<Bitmap> imageBitmapList;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,23 +33,23 @@ public class GridViewActivity extends Activity {
 		gridView = (GridView) findViewById(R.id.grid_view);
 
 		utils = new Utils(GridViewActivity.this);
+		
+		
+		AppConstant.gridviewClickListener = new GridImageViewListner(0,this);
 
 		// Initilizing Grid View
 		InitilizeGridLayout();
 
 		// loading all image paths from SD card
-		imagePaths = utils.getFilePaths();
-
-		imageBitmapList = new ArrayList<Bitmap>();
-		for (String path : imagePaths) {
-
-			imageBitmapList.add(BitmapFactory.decodeFile(path));
-
-		}
+		
+		//int[] drawable = {R.drawable.};
+		
+		
+		AppConstant.setBitmap(GridViewActivity.this);
 
 		// Gridview adapter
 		adapter = new GridViewImageAdapter(GridViewActivity.this,
-				imageBitmapList, columnWidth);
+				AppConstant.imageBitmapList, columnWidth);
 
 		// setting grid view adapter
 		gridView.setAdapter(adapter);

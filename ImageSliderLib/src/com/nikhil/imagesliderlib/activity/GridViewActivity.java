@@ -1,4 +1,4 @@
-package com.nikhil.imagesliderlib.activity;
+/*package com.nikhil.imagesliderlib.activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,4 +74,4 @@ public class GridViewActivity extends Activity {
 		gridView.setVerticalSpacing((int) padding);
 	}
 
-}
+}*/

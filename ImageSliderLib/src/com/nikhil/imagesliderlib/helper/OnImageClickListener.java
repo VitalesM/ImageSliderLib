@@ -15,12 +15,32 @@ import android.view.View.OnClickListener;
  */
 public class OnImageClickListener implements OnClickListener {
 
-	private int postion;
-	private Activity activity;
+	protected int position;
+	protected Activity activity;
+
+	
+
+	
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+
+	public Activity getActivity() {
+		return activity;
+	}
+
+	public void setActivity(Activity activity) {
+		this.activity = activity;
+	}
 
 	// constructor
 	public OnImageClickListener(int position,Activity activity) {
-		this.postion = position;
+		this.position = position;
 		this.activity = activity;
 	}
 

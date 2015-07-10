@@ -60,9 +60,14 @@ public class GridViewImageAdapter extends BaseAdapter {
 
 		// image view click listener
 		if(AppConstant.gridviewClickListener == null)
+		{
 		imageView.setOnClickListener(new OnImageClickListener(position,_activity));
+		}
 		else
+		{
+			AppConstant.gridviewClickListener.setPosition(position);
 			imageView.setOnClickListener(AppConstant.gridviewClickListener);	
+		}
 
 		return imageView;
 	}
