@@ -56,7 +56,9 @@ public class GridViewActivity extends Activity {
 				R.drawable.ic_15,};
 		AppConstant.drawablelist = drawable;
 		
-		AppConstant.setBitmapDrawable(GridViewActivity.this);
+	
+		
+		AppConstant.setBitmapDrawable(GridViewActivity.this,columnWidth);
 
 		// Gridview adapter
 		adapter = new GridViewImageAdapter(GridViewActivity.this,

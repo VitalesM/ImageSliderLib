@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.nikhil.imagesliderlib.activity.GridViewActivity"
+            android:name="com.nikhil.test.activity.GridViewActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         </activity>
         
         <activity
-            android:name="com.nikhil.imagesliderlib.activity.FullScreenViewActivity"
+            android:name="com.nikhil.test.activity.FullScreenViewActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar">
         </activity>
     </application>
