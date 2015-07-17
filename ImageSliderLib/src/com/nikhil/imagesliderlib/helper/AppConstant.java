@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import android.R;
+
 import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.TypedValue;
+
 
 public class AppConstant {
 
 	// Number of columns of Grid View
-	public static final int NUM_OF_COLUMNS = 3;
+	public static int NUM_OF_COLUMNS = 3;
 
 	// Gridview image padding
-	public static final int GRID_PADDING = 8; // in dp
+	public static  int GRID_PADDING = 8; // in dp
 
 	// SD card image directory
-	public static final String PHOTO_ALBUM = "/mnt/shared/GennyMotionShared/jamesRodriguez/";
+	public static  String PHOTO_ALBUM = "/mnt/shared/GennyMotionShared/jamesRodriguez/";
 
 	// supported file formats
 	public static final List<String> FILE_EXTN = Arrays.asList("jpg", "jpeg",

@@ -1,7 +1,5 @@
 package com.nikhil.test.activity;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -18,7 +16,7 @@ import com.nikhil.test.model.GridImageViewListner;
 public class GridViewActivity extends Activity {
 
 	private Utils utils;
-	private List<String> imagePaths;
+//	private List<String> imagePaths;
 	private GridViewImageAdapter adapter;
 	private GridView gridView;
 	private int columnWidth;
